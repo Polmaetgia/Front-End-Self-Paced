@@ -1,0 +1,115 @@
+@import 'mobile.css';
+
+/* Media query for devices with screens and a min width of 535px */
+@media screen and (min-width: 535px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header ul { 
+        display: flex;
+    }
+
+    header a {
+        border-top: none;
+    }
+
+    .sidebar {
+        margin-top: 0;
+    }
+}
+
+/* Media query for devices with screens and a min width of 730px */
+@media screen and (min-width: 730px) {
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: flex-start;
+        margin-bottom: 1rem;
+    }
+
+    .cards li {
+        width: calc(50% - 0.5rem);
+        margin-bottom: 0;
+    }
+}
+
+/* Media query for devices with screens and a min width of 1010px */
+@media screen and (min-width: 1010px) {
+    .cards li {
+        width: calc(33% - 0.5rem);
+    }
+}
+
+/* Media query for devices with screens and a min width of 1295px */
+@media screen and (min-width: 1295px) {
+    main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        padding: 1rem;
+    }
+
+    .cards li {
+        width: calc(32% - 0.5rem);
+    }
+
+    article p {
+        padding-right: 1rem;
+    }
+}
+
+/* Media query for desktop computers with a touchpad or mouse */
+@media (hover: hover) and (pointer: fine) {
+    .cards li:hover {
+        color: #6441A5;
+    }
+}
+
+/* Image optimizations */
+.cool-space-rocket img {
+    srcset: 
+        "images/rocket320.jpg 320w,
+        images/rocket640.jpg 640w,
+        images/rocket1024.jpg 1024w,
+        images/rocket1280.jpg 1280w";
+    sizes: 
+        "(max-width: 530px) 80vw,
+        (max-width: 730px) 70vw,
+        (max-width: 1500px) 50vw,
+        1000px";
+}
+
+.space-building {
+    display: flex;
+    flex-direction: column;
+}
+
+.space-building picture {
+    display: block;
+}
+
+.space-building picture source[type="image/webp"] {
+    srcset: "images/space-building.webp";
+}
+
+.space-building img {
+    src: "images/space-building.jpg";
+    alt: "Communist UFO spaceship monument in the middle of nowhere in Bulgaria.";
+}
+
+.nasa-astronaut picture source[max-width="900px"] {
+    srcset: "images/astronaut-crop2.jpg";
+}
+
+.nasa-astronaut picture source[max-width="1400px"] {
+    srcset: "images/astronaut-crop1.jpg";
+}
+
+.nasa-astronaut img {
+    src: "images/astronaut.jpg";
+    alt: "NASA Astronaut flying in Space in front of Earth";
+}
+

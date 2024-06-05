@@ -1,0 +1,57 @@
+@import 'mobile.css';
+
+@media screen and (min-width: 1024px) {
+    /* Root custom properties */
+    :root {
+        --basic-background-image: linear-gradient(to right, #2a0845, #6441A5);
+        --basic-background-color: #6441A5;
+    }
+
+    /* Add a viewport meta tag to the head (should be done in the HTML file) */
+    /*
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    */
+
+    /* Body element */
+    body {
+        margin: 0;
+    }
+
+    /* Header styles */
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header ul {
+        display: flex;
+    }
+
+    header a {
+        border-top: none;
+    }
+
+    /* Main element */
+    main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    /* Article paragraph styles */
+    article p {
+        padding-right: 1rem;
+    }
+
+    /* Cards container styles */
+    .cards {
+        display: flex;
+        gap: 1rem;
+    }
+
+    /* Cards items styles */
+    .cards li {
+        width: 31%;
+        margin-bottom: 0;
+    }
+}

@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f3f3f3;
+}
+
+.block {
+    width: 200px;
+    height: 75px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+/* Block 1: Skew transformation along the Y-axis at 30 degrees */
+.block1 {
+    background: #ff5733;
+    transform: skewY(30deg);
+}
+
+/* Block 2: 2D rotation clockwise with an angle of 45 degrees */
+.block2 {
+    background: #3393ff;
+    transform: rotate(45deg);
+}
+
+/* Block 3: 1.5 scale transformation using the scaleX function */
+.block3 {
+    background: #33ff42;
+    transform: scaleX(1.5);
+}
+
+/* Block 4: Double in size on hover with a transition of 2s */
+.block4 {
+    background: #33fffc;
+    transition: all 2s;
+}
+
+.block4:hover {
+    transform: scale(2);
+}
+
+/* Block 5: Move 40px to the right on hover with a transition of 300ms */
+.block5 {
+    background: #ff33f6;
+    transition: all 300ms;
+}
+
+.block5:hover {
+    transform: translateX(40px);
+}
+
+/* Block 6: Rotate counterclockwise in 2D on hover, with an angle of 90 degrees, 
+   a background of #ff0000, a transition of 3s, and an animation delay of 200ms */
+.block6 {
+    background: #30b851;
+    transition: all 3s;
+    transition-delay: 200ms;
+}
+
+.block6:hover {
+    transform: rotate(-90deg);
+    background-color: #ff0000;
+}
+
+/* Block 7: Move 100px to the right on hover with a transition of 3s 
+   and timing that starts slowly, quickly speeds up, and then slows down at the end */
+.block7 {
+    background: #303cb8;
+    transition: all 3s ease-in-out;
+}
+
+.block7:hover {
+    transform: translateX(100px);
+}
+
+/* Block 8: 2D rotate on hover counterclockwise with an angle of 1090 degrees,
+   a transition of 5s, and a timing effect that ends slowly */
+.block8 {
+    background: #ec467b;
+    transition: all 5s ease-out;
+}
+
+.block8:hover {
+    transform: rotate(-1090deg);
+}
+
+/* Block 9: Rotate counterclockwise on hover in 2D with an angle of 500 degrees,
+   a transition of 2s. The center of rotation should be the top-left corner of the block */
+.block9 {
+    background: #e2ec46;
+    transform-origin: top left;
+    transition: transform 2s;
+}
+
+.block9:hover {
+    transform: rotate(-500deg);
+}
+
+/* Block 10: Rotate clockwise on hover in 2D with an angle of 460 degrees,
+   a transition of 5s, and an animation delay of 300ms. 
+   The center of rotation should be the bottom-right corner of the block */
+.block10 {
+    background: #ff1737;
+    transform-origin: bottom right;
+    transition: transform 5s;
+    transition-delay: 300ms;
+}
+
+.block10:hover {
+    transform: rotate(460deg);
+}
