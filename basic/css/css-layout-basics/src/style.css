@@ -1,0 +1,60 @@
+/* General styles */
+body {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/* Layout styles */
+header,
+footer {
+    width: 100%;
+}
+
+main {
+    float: left;
+    width: 70%;
+}
+
+aside {
+    float: right;
+    width: 30%;
+}
+
+.header_line {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+/* Content styles */
+.client_stories {
+    column-count: 3;
+    column-gap: 20px;
+}
+
+.client_stories h2 {
+    column-span: all;
+}
+
+.features {
+    column-count: 2;
+    column-gap: 0;
+}
+
+.info {
+    height: 460px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+form {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
